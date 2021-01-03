@@ -50,7 +50,7 @@ public class HookHuaweiLoader implements IXposedHookLoadPackage, IXposedHookZygo
                             Class<?> cls = getApkClass(context, handleHookClass);
                             Object instance = cls.newInstance();
                             PackageManager packageManager = context.getPackageManager();
-                            PackageInfo packageInfo = packageManager.getPackageInfo("com.antiy.backgroundCheck", 0);
+                            PackageInfo packageInfo = packageManager.getPackageInfo("你应用的包名", 0);
 
                             cls.getDeclaredMethod(testMethod, loadPackageParam.getClass(), int.class)
                                     .invoke(instance, loadPackageParam, packageInfo.versionCode);
