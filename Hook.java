@@ -19,7 +19,7 @@ import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
-public class HookHuawei {
+public class Hook {
     public final static String TAG = "antiy: ";
     public static int checkVersionCode = 0;
 
